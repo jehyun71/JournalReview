@@ -1,969 +1,334 @@
 ---
-title: "FFR or IVUS to Guide PCI"
-title-slide-attributes:
-  data-background-image: "FLAVOUR Background image.png"
-  data-background-size: contain
-  data-background-opacity: "0.28"
-subtitle: "FLAVOUR Trial Journal Review"
+title: "Fractional Flow Reserve or Intravascular Ultrasonography to Guide PCI"
+subtitle: "FLAVOUR Trial Review"
 author: "Lee Jehyun"
-lang: ko
 format:
   revealjs:
-    theme: simple
-    css: styles.css
-    slide-number: true
-    controls: true
-    progress: true
-    footer: FLAVOUR
+    theme: default
+    transition: slide
     scrollable: true
-    center: false
-    transition: fade
-    width: 1280
-    height: 720
-    margin: 0.06
+    slide-number: true
+    width: 1600
+    height: 900
 ---
 
-## glossary_1
+## Title & Introduction
 
-::: {.section-kicker}
-Coronary anatomy and disease
-:::
-
-**Coronary artery (관상동맥)**  
-심장 근육에 산소와 영양분을 공급하는 혈관. 대표적으로 좌전하행지(LAD), 좌회선지(LCx), 우관상동맥(RCA)이 있다.
-
-**Plaque (죽상반)**  
-지질, 염증세포, 섬유조직 등이 혈관벽에 축적되어 형성되는 병변. 혈관 내강을 좁히고 혈류를 제한할 수 있다.
-
-**Coronary artery disease, CAD (관상동맥질환)**  
-관상동맥 협착 또는 폐색으로 심근 혈류가 감소하는 질환. 협심증, 심근경색 등의 원인이 될 수 있다.
-
-::: {.takeaway}
-CAD 치료 판단은 단순히 "얼마나 좁아 보이는가"뿐 아니라, 그 병변이 실제 심근 허혈을 만드는지까지 함께 봐야 한다.
-:::
-
-## glossary_2
-
-::: {.section-kicker}
-Treatment terms
-:::
-
-::: {.columns}
-::: {.column width="48%"}
-**Revascularization (재혈관화)**  
-협착 또는 폐색된 관상동맥의 혈류를 다시 회복시키는 치료 전략. 약물치료, PCI, CABG 중 병변 특성과 환자 위험도에 따라 선택한다.
-
-**Percutaneous Coronary Intervention, PCI (경피적 관상동맥 중재술)**  
-카테터를 관상동맥 병변까지 넣어 balloon dilatation과 stent 삽입으로 협착 부위를 넓히는 비수술적 재혈관화 방법.
-:::
-
-::: {.column width="52%"}
-::: {.image-frame .compact}
-<img src="FLAVOUR Background image.png" class="paper-img"/>
-:::
-
-::: {.small-note}
-PCI 관련 대표 이미지로 배치했다. 실제 balloon/stent deployment 이미지가 있으면 이 위치에 교체하면 된다.
-:::
-:::
-:::
-
-## glossary_3
-
-::: {.section-kicker}
-Diagnostic tools
-:::
-
-**Coronary Angiography, CAG (관상동맥 조영술)**  
-조영제를 주입한 뒤 X-ray로 관상동맥 내강을 확인하는 검사. 혈관이 얼마나 좁아 보이는지 평가하는 표준 검사지만, 기능적 허혈과 불일치할 수 있다.
-
-**Fractional Flow Reserve, FFR (분획혈류예비력)**  
-약물 유도 최대 고관류 상태에서 협착 전후 압력 비율을 측정하는 검사. 병변이 실제 심근 허혈을 유발하는지 판단하는 데 강점이 있다.
-
-**Intravascular Ultrasonography, IVUS (혈관내 초음파)**  
-혈관 안에서 초음파로 혈관 내강, 혈관벽, plaque 구조를 단면으로 보는 검사. 혈관 크기와 plaque burden, stent 최적화 평가에 강점이 있다.
-
-::: {.takeaway}
-CAG는 angiography, FFR은 physiology, IVUS는 anatomy를 보는 도구로 이해하면 된다.
-:::
-
-## CAG 협착도에 따른 기본 판단
-
-::: {.flowline}
-::: {.flowbox}
-::: {.top}
-협착 < 40%
-:::
-::: {.bottom}
-기능적 허혈 가능성이 낮아 대개 약물치료 중심으로 접근한다.
-:::
-:::
-
-::: {.flowbox}
-::: {.top}
-협착 40-70%
-:::
-::: {.bottom}
-Intermediate stenosis. CAG상 협착도가 실제 심근 허혈 가능성과 직결되지 않는다.
-:::
-:::
-
-::: {.flowbox}
-::: {.top}
-협착 > 70%
-:::
-::: {.bottom}
-해부학적으로 의미 있는 협착 가능성이 높아 PCI를 고려한다.
-:::
-:::
-:::
-
-::: {.takeaway}
-40-70% 병변에서는 추가 검사가 필요하다. 실제 진료에서 가장 흔히 쓰는 선택지는 FFR과 IVUS다.
-:::
-
-## IVUS: Anatomy를 보는 검사
-
-::: {.columns}
-::: {.column width="52%"}
-### 잘하는 것
-
-- 혈관 내강, 혈관벽, plaque burden을 자세히 보여줌
-- 혈관 지름과 병변 길이를 확인해 stent 크기와 위치 선정에 유리
-- stent expansion, edge plaque, dissection 등 시술 최적화 평가 가능
-- IVUS-guided PCI가 angiography-guided PCI보다 임상 결과를 개선한다는 보고가 있음
-:::
-
-::: {.column width="48%"}
-### 못하는 것
-
-- 병변이 실제 허혈을 유발하는지 직접 판정하지 못함
-- 해부학적으로 좁아 보여도 기능적으로는 문제가 작을 수 있음
-- IVUS 기준만 따르면 PCI 시행률이 높아질 가능성이 있음
-
-::: {.takeaway .warn}
-IVUS는 stent 설계와 최적화에 탁월하지만, ischemia test는 아니다.
-:::
-:::
-:::
-
-## FFR: Physiology를 보는 검사
-
-::: {.columns}
-::: {.column width="52%"}
-### 잘하는 것
-
-- 약물로 최대 고관류 상태를 만든 뒤 병변 전후 압력 비율을 측정
-- FFR $\le 0.80$이면 기능적으로 의미 있는 허혈 가능성이 높다고 판단
-- 허혈 유발 병변을 선별해 불필요한 PCI를 줄일 수 있음
-- 과거 연구에서 FFR-guided PCI는 angiography-guided PCI 또는 약물치료보다 임상 사건이 적은 결과를 보였음
-:::
-
-::: {.column width="48%"}
-### 못하는 것
-
-- 혈관벽 내부 상태와 plaque morphology를 직접 볼 수 없음
-- stent diameter, stent length, landing zone 선정에는 제한적
-- 시술 후 stent expansion과 apposition을 직접 평가하지 못함
-
-::: {.takeaway .warn}
-FFR은 PCI 시행 여부 결정에 강하지만, stent 설계 도구는 아니다.
-:::
-:::
-:::
-
-## Clinical Gap: FFR vs IVUS
-
-::: {.decision-grid}
-::: {.decision-card}
-::: {.card-title}
-실제 진료 패턴
-:::
-
-- Intermediate stenosis에서는 FFR 또는 IVUS 중 하나를 선택하는 경우가 많음
-- FFR은 "시술할 병변인가"에 강함
-- IVUS는 "어떻게 stent를 넣을 것인가"에 강함
-:::
-
-::: {.decision-card}
-::: {.card-title}
-남아 있던 질문
-:::
-
-- 두 전략의 임상 결과가 실제로 다른가?
-- FFR로 PCI를 줄여도 안전한가?
-- IVUS로 더 정교하게 시술하면 환자 증상과 임상 사건이 더 좋아지는가?
-:::
-:::
-
-::: {.takeaway}
-FLAVOUR 연구는 FFR-guided strategy와 IVUS-guided strategy의 임상 결과 및 환자 보고 결과를 직접 비교했다.
-:::
-
-## FLAVOUR Trial: 배경과 가설 변화
-
-::: {.columns}
-::: {.column width="50%"}
-### Trial setting
-
-- 한국과 중국의 18개 대형 병원에서 진행
-- 연구자 주도, 전향적, 다기관, 무작위 배정, 오픈 라벨
-- 아시아 다국적 비열등성 임상시험
-:::
-
-::: {.column width="50%"}
-### Hypothesis shift
-
-- 초기 가설: FFR이 불필요한 시술을 줄여 IVUS보다 우월할 것
-- 연구 도중 IVUS-guided drug-eluting stent PCI의 임상 이득을 보인 연구들이 발표됨
-- 최종 가설: FFR-guided strategy가 IVUS-guided strategy에 비열등한가?
-:::
-:::
-
-::: {.takeaway}
-FFR이 비열등하면서 stent 개수와 의료자원 소모를 줄인다면, 임상적으로 충분히 가치 있는 전략이 된다.
-:::
-
-## Study Design and Population
-
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-Design
-:::
-::: {.value}
-RCT
-:::
-::: {.detail}
-Investigator-initiated, prospective, multicenter, open-label, noninferiority trial
-:::
-:::
-
-::: {.stat-card}
-::: {.label}
-Sites
-:::
-::: {.value}
-18
-:::
-::: {.detail}
-Korea and China
-:::
-:::
-
-::: {.stat-card}
-::: {.label}
-Population
-:::
-::: {.value}
-40-70%
-:::
-::: {.detail}
-Intermediate stenosis on CAG
-:::
-:::
-:::
-
-### 대상 환자군
-
-- 선정 기준: 허혈성 심질환 의심으로 시행한 CAG에서 40-70% 협착이 있는 19세 이상 환자
-- 목표혈관 직경 $\ge 2.5$ mm
-- 제외 기준: 기대여명 2년 미만의 비심장성 동반 질환, 출혈 위험 증가
-
-## Randomization and Stratification
+- **Title**: Fractional Flow Reserve or Intravascular Ultrasonography to Guide PCI
+- **Study Name**: FLAVOUR Trial
+- **Journal**: New England Journal of Medicine (NEJM)
 
-::: {.flowline}
-::: {.flowbox}
-::: {.top}
-Eligible patients
-:::
-::: {.bottom}
-19세 이상, CAG상 40-70% 협착, target vessel $\ge 2.5$ mm
-:::
-:::
-
-::: {.flowbox}
-::: {.top}
-1:1 balanced randomization
-:::
-::: {.bottom}
-FFR-guided strategy vs IVUS-guided strategy
-:::
-:::
-
-::: {.flowbox}
-::: {.top}
-Stratification
-:::
-::: {.bottom}
-시험 기관과 당뇨병 유무에 따라 층화
-:::
-:::
-:::
-
-::: {.takeaway}
-층화는 병원별 시술 패턴과 당뇨병 유무에 따른 CAD 위험 차이를 두 군에서 균형화하기 위한 설계다.
-:::
-
-## Study Design: Figure S1
-
-::: {.image-frame}
-<img src="FLAVOUR Study design.png" class="paper-img"/>
-:::
+---
 
-::: {.small-note}
-Source image: FLAVOUR Study design.png. Intermediate stenosis 환자를 FFR-guided PCI 또는 IVUS-guided PCI로 배정하고 24개월 추적했다.
-:::
-
-## Decision and Optimization Criteria
+## Glossary_1: CAD
 
-| 분류 | FFR-guided group | IVUS-guided group |
-|---|---|---|
-| PCI 시행 기준 | 약물 유도 최대 고관류 상태에서 FFR $\le 0.80$이면 PCI 시행 | MLA $\le 3\text{ mm}^2$ 또는 $3 < \text{MLA} \le 4\text{ mm}^2$이면서 plaque burden $>70\%$이면 PCI 시행 |
-| PCI 성공 기준 | Post-PCI distal FFR $\ge 0.88$ 또는 stent 양 끝단 delta FFR $<0.05$ | Stent edge plaque burden $\le55\%$ 및 MSA $\ge5.5\text{ mm}^2$ 또는 인접 reference lumen area 이상 |
+- **Coronary Artery (관상동맥)**
+  - 심장 근육에 혈액을 공급하는 동맥
+- **Plaque (플라크)**
+  - 혈관 내부에 지질 축적, 석회화 등으로 인해 형성된 덩어리
+- **Coronary Artery Disease (CAD, 관상동맥질환)**
+  - 관상동맥이 막히거나 수축하여 심장 혈액 공급이 어려운 상태
 
-::: {.small-note}
-MLA: minimal lumen area. MSA: minimal stent area. Decision making은 "시술할 것인가", optimization은 "시술이 충분히 잘 되었는가"를 의미한다.
-:::
+---
 
-## Outcomes
+## Glossary_2: PCI
 
-::: {.decision-grid}
-::: {.decision-card}
-::: {.card-title}
-Primary outcome
-:::
+- **Revascularization (재혈관화)**
+  - 막힌 혈관의 혈류를 복원해주는 치료 (시술 또는 수술)
+- **Percutaneous Coronary Intervention (PCI)**
+  - 피부를 통해 도관을 삽입하여 막힌 관상동맥을 열어주는 중재술
+  - **본 연구의 기준**: 스텐트 삽입술
 
-무작위 배정 24개월 후 다음의 복합 지표:
+---
 
-- 모든 원인 사망
-- 심근경색
-- 모든 재혈관화
-:::
+## Glossary_3: Modalities
 
-::: {.decision-card}
-::: {.card-title}
-Major secondary outcomes
-:::
+- **Coronary Angiography (CAG, 관상동맥 조영술)**
+  - 조영제를 넣어 관상동맥의 형태와 협착도를 육안으로 관찰하는 검사
+- **Fractional Flow Reserve (FFR, 분획혈류예비력)**
+  - 병변 전후의 압력 차이를 측정해 실제 혈류 감소량을 평가하는 기능 검사
+- **Intravascular Ultrasonography (IVUS, 혈관내초음파)**
+  - 초음파 카테터로 혈관 벽과 내부 플라크의 해부학적 구조를 보는 영상 검사
 
-- Primary outcome의 개별 구성 요소
-- 환자당 및 혈관당 삽입된 stent 수
-- Stroke
-- Seattle Angina Questionnaire(SAQ)로 측정한 환자 보고 결과
-:::
-:::
+---
 
-## Sample Size Assumptions
+## Background_1: Gray Zone
 
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-Assumed 24-month event rate
-:::
-::: {.value}
-10% vs 12%
-:::
-::: {.detail}
-FFR group vs IVUS group
-:::
-:::
+- **기존 조영술(CAG)의 판단 기준**
+  - 협착 40% 미만: 약물 치료 진행
+  - 협착 70% 초과: PCI 시술 진행
+- **40% ~ 70% 협착**
+  - 육안적 협착도가 실제 심근의 기능적 허혈 유발 가능성과 직결되지 않음
+  - 추가적인 정밀 검사(FFR 또는 IVUS)의 가이드가 필요함
 
-::: {.stat-card}
-::: {.label}
-Noninferiority margin
-:::
-::: {.value}
-2.5%p
-:::
-::: {.detail}
-Absolute risk difference margin
-:::
-:::
+---
 
-::: {.stat-card}
-::: {.label}
-Power / alpha
-:::
-::: {.value}
-90% / 5%
-:::
-::: {.detail}
-One-sided type I error, medical device guidance
-:::
-:::
-:::
+## Background_2: IVUS vs. FFR
 
-::: {.takeaway}
-최종 목표 표본 크기는 약 1,700명으로 산출되었다.
-:::
+- **IVUS 가이드 전략**
+  - 자세한 해부학적 정보 제공으로 스텐트 최적화 설계 및 위치 개선에 탁월
+  - 실제 병변이 허혈을 유발하는지 여부는 평가 불가능
+- **FFR 가이드 전략**
+  - 실제 허혈 유발 판정 및 시술 여부 결정에 탁월
+  - 혈관 벽 내부 상태를 볼 수 없어 스텐트 크기 선정 등 최적화에는 무력함
 
-## Statistical Analysis Plan
+---
 
-::: {.decision-grid}
-::: {.decision-card}
-::: {.card-title}
-Descriptive analysis
-:::
+## Background_3: Study Rationale
 
-- 연속형 변수: 평균과 표준편차
-- 범주형 변수: 총 수와 백분율
-- 2차 결과: 점 추정치와 양측 95% 신뢰구간
-:::
+- **FLAVOUR**
+  - 보통 두 검사 중 하나를 선택해 사용하나, 임상 결과 편차에 대한 데이터 부족
+  - FFR 가이드 시술과 IVUS 가이드 시술의 임상 및 환자 보고 결과를 직접 비교
+  - 한국과 중국의 18개 대형 병원이 참여한 아시아 다국적 대규모 임상시험
 
-::: {.decision-card}
-::: {.card-title}
-Primary analysis
-:::
+---
 
-- Cox 비례위험 모델 사용
-- 연구 기관과 당뇨병 유무를 random effect로 포함
-- Schoenfeld 잔차 검정으로 비례위험 가정 확인
-:::
-:::
+## Background_4: Hypothesis
 
-::: {.takeaway}
-Main analysis는 ITT 분석으로 시행했고, PP 분석으로 결과의 일관성을 확인했다. 2차 결과의 신뢰구간은 multiplicity 보정이 없어 결정적 치료 효과 판단에는 사용하지 않는다.
-:::
+- **초기 가설**
+  - FFR이 불필요한 시술을 줄여 합병증을 방지하므로 IVUS 대비 우월할 것임
+- **수정 가설 (비열등성 검정)**
+  - 임상시험 도중 IVUS가 약물 방출 스텐트 사용 시 임상적 결과를 개선한다는 타 연구들이 발표됨
+  - FFR이 의료 자원 소모와 스텐트 개수를 줄이므로, 비열등성 입증만으로도 충분히 임상적 가치가 큼
 
-## Results: Enrollment and Follow-up
+---
 
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-Screened
-:::
-::: {.value}
-4,355
-:::
-::: {.detail}
-July 2016 - August 2019
-:::
-:::
+## Methods: Study Design
 
-::: {.stat-card}
-::: {.label}
-Randomized
-:::
-::: {.value}
-1,682
-:::
-::: {.detail}
-FFR 838, IVUS 844
-:::
-:::
+- **연구 디자인**
+  - 연구자 주도, 전향적, 다기관, 무작위 배정, 오픈 라벨, 비열등성 임상시험
+- **대상 환자군**
+  - **선정 기준**: 허혈성 심질환 의심 환자 중 CAG상 40~70% 협착이 있는 19세 이상 (목표 혈관 직경 2.5mm 이상)
+  - **제외 기준**: 비심장성 동반 질환으로 기대여명 2년 미만, 출혈 고위험군 환자
 
-::: {.stat-card}
-::: {.label}
-Follow-up completed
-:::
-::: {.value}
-99.2%
-:::
-::: {.detail}
-14 patients lost to follow-up
-:::
-:::
-:::
+---
 
-::: {.takeaway}
-무작위 배정 후 추적 관찰 완성도가 높아 primary outcome 해석의 자료 손실 위험은 작다.
-:::
+## Methods: Randomization
 
-## Enrollment, Randomization, and Follow-up: Figure S2
+- **1:1 대칭 무작위 배정**
+  - 환자들을 FFR 가이드 그룹과 IVUS 가이드 그룹에 1:1 배정
+- **층화(Stratification) 디자인**
+  - 병원별 편차를 제어하기 위한 **'시험 기관'** 기준 층화
+  - 예후에 큰 영향을 미치는 **'당뇨병(Diabetes) 유무'** 기준 층화
 
-::: {.image-frame}
-<img src="FLAVOUR Figure S2.png" class="paper-img"/>
-:::
+---
 
-::: {.small-note}
-ITT 분석은 무작위 배정된 전체 환자를 기준으로 시행했다. Protocol violation은 FFR/IVUS별 사전 정의된 PCI 시행 기준과 DES 사용 기준 위반을 포함했다.
-:::
+## Methods: Interventional Criteria
 
-## Results: Baseline Characteristics
+| 분류 | FFR 가이드 그룹 | IVUS 가이드 그룹 |
+| :--- | :--- | :--- |
+| **PCI 시술 시행 기준**<br> | 최대 충혈 상태에서<br>**$\text{FFR} \le 0.80$** 일 때 시술 | - $\text{MLA(최소내강면적)} \le 3\text{ mm}^2$<br>- $3 < \text{MLA} \le 4\text{ mm}^2$ 이면서 플라크 $> 70\%$ |
+| **PCI 시술 성공 기준**<br> | - 시술 후 $\text{FFR} \ge 0.88$<br>- 스텐트 전후 압력차 $< 0.05$ | - 스텐트 가장자리 플라크 $\le 55\%$<br>- $\text{MSA(최소스텐트면적)} \ge 5.5\text{ mm}^2$ 또는 인접 혈관 면적 이상 |
 
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-Mean age
-:::
-::: {.value}
-65.1 yr
-:::
-::: {.detail}
-FFR 65.4, IVUS 64.8
-:::
-:::
+: {tbl-colwidths="[20,40,40]"}
 
-::: {.stat-card}
-::: {.label}
-Male
-:::
-::: {.value}
-70.6%
-:::
-::: {.detail}
-All patients were Asian
-:::
-:::
+---
 
-::: {.stat-card}
-::: {.label}
-Diabetes
-:::
-::: {.value}
-32.9%
-:::
-::: {.detail}
-Stratification factor
-:::
-:::
-:::
+## Methods: Endpoints
 
-| Baseline feature | FFR (N=838) | IVUS (N=844) |
-|---|---:|---:|
-| Stable angina | 519 (61.9%) | 544 (64.5%) |
-| Acute coronary syndrome | 252 (30.1%) | 244 (28.9%) |
-| Hypertension | 577 (68.9%) | 570 (67.5%) |
-| Dyslipidemia | 667 (79.6%) | 655 (77.6%) |
-| Previous PCI | 165 (19.7%) | 163 (19.3%) |
-
-## Baseline Characteristics: Table 1
-
-::: {.image-frame}
-<img src="FLAVOUR Table 1.jpeg" class="paper-img tall"/>
-:::
+- **주요 평가 지표**
+  - 무작위 배정 24개월 후의 복합 지표
+  - **모든 원인에 의한 사망 + 심근경색 + 재혈관화**
+- **주요 2차 평가 지표**
+  - 주요 복합 지표의 개별 구성 요소 분석
+  - 환자당 및 혈관당 삽입된 스텐트 수 및 길이
+  - 뇌졸중 발생률, 시애틀 협심증 설문지(SAQ)로 측정한 환자 만족도 점수
 
-## Results: Lesion and Procedure Profile
+---
 
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-LAD target vessel
-:::
-::: {.value}
-61.9%
-:::
-::: {.detail}
-Most common target vessel
-:::
-:::
+## Methods: Statistical Settings
 
-::: {.stat-card}
-::: {.label}
-Baseline SYNTAX
-:::
-::: {.value}
-< 10
-:::
-::: {.detail}
-Low anatomical complexity
-:::
-:::
+- **가정치 및 마진**
+  - 24개월 시점 주요 결과 발생률 가정: FFR 군 10%, IVUS 군 12%
+  - 비열등성 마진: **2.5% 포인트**
+- **통계적 세팅**
+  - 단측 제1종 오류율($\alpha$) = 5%
+  - 검정력 = 90%
+  - 최종 목표 표본 크기: **약 1,700명** 도출
 
-::: {.stat-card}
-::: {.label}
-Diameter stenosis
-:::
-::: {.value}
-56.8%
-:::
-::: {.detail}
-FFR 56.7%, IVUS 56.9%
-:::
-:::
-:::
+---
 
-::: {.takeaway}
-대상자는 전반적으로 중등도 협착, 낮은 해부학적 복잡도의 비교적 low-risk CAD 환자군이었다.
-:::
+## Methods: Analysis Framework
 
-## Procedural Characteristics: Table 2
+- **데이터 표현법**
+  - 연속형 변수는 평균과 표준편차로, 범주형 변수는 총 수와 백분율로 기술
+- **모델링 및 전제 검증**
+  - Cox 비례위험 모델 사용 (연구 기관과 당뇨 유무를 랜덤 효과로 포함)
+  - Schoenfeld 잔차 검정으로 비례위험 대전제 만족 여부 검증
+- **분석 대상 집단**
+  - **Intention-to-treat (ITT)** 분석을 메인으로 삼고, Per-protocol (PP) 분석과 비교
 
-::: {.image-frame}
-<img src="FLAVOUR Table 2.jpeg" class="paper-img tall"/>
-:::
+---
 
-::: {.small-note}
-Table 2의 핵심은 IVUS군에서 PCI 시행률이 더 높았다는 점이다. 환자 기준 any PCI는 FFR 44.4% vs IVUS 65.3%, target-vessel PCI는 FFR 33.2% vs IVUS 58.4%였다.
-:::
+## Study design
 
-## Results: PCI and Stent Use
+::: panel-tabset
+### Figure S1
 
-::: {.result-line}
-::: {}
-**Patients who underwent PCI**
-:::
-::: {}
-FFR: 44.4%
-
-::: {.bar-wrap}
-::: {.bar-ffr style="width:44.4%;"}
-:::
-:::
-:::
-::: {}
-IVUS: 65.3%
-
-::: {.bar-wrap}
-::: {.bar-ivus style="width:65.3%;"}
+<img src="FLAVOUR Study design.png"/>
 :::
-:::
-:::
-:::
 
-::: {.result-line}
-::: {}
-**Target-vessel PCI**
-:::
-::: {}
-FFR: 33.2%
-
-::: {.bar-wrap}
-::: {.bar-ffr style="width:33.2%;"}
-:::
-:::
-:::
-::: {}
-IVUS: 58.4%
-
-::: {.bar-wrap}
-::: {.bar-ivus style="width:58.4%;"}
-:::
-:::
-:::
-:::
+---
 
-| Procedural variable | FFR | IVUS | Difference |
-|---|---:|---:|---:|
-| Any PCI | 372/838 (44.4%) | 551/844 (65.3%) | -20.9%p |
-| Multivessel PCI | 66/838 (7.9%) | 125/844 (14.8%) | -6.9%p |
-| Stents per patient | 0.6±0.9 | 0.9±1.0 | -0.3 |
-| Total stent length per patient | 16.5±24.1 mm | 25.2±28.1 mm | -8.7 mm |
-
-::: {.takeaway}
-FFR-guided strategy는 IVUS-guided strategy보다 PCI와 stent implantation을 뚜렷하게 줄였다.
-:::
+## Results: Baseline Enrollment
 
-## Results: PCI Success
+- **등록 결과**: 총 4,355명 스크리닝 $\rightarrow$ **1,682명 최종 무작위 배정**
+  - FFR 가이드 그룹: 838명
+  - IVUS 가이드 그룹: 844명
 
-| Outcome among target vessels with PCI | FFR | IVUS |
-|---|---:|---:|
-| Device success | 305/305 (100%) | 525/526 (99.8%) |
-| Lesion success | 305/305 (100%) | 525/526 (99.8%) |
-| Procedural success | 305/305 (100%) | 525/526 (99.8%) |
-| Successful PCI by prespecified physiologic/anatomic criteria | 50.1% | 54.8% |
+::: panel-tabset
+### Figure S2
 
-::: {.takeaway .warn}
-조영술상 procedural success는 거의 100%였지만, FFR/IVUS로 정의한 최적화 성공 기준은 약 절반에서만 만족했다.
-:::
+<img src="FLAVOUR Figure S2.png"/>
 
-## Primary Outcome
+### Table 1
 
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-FFR
-:::
-::: {.value}
-8.1%
-:::
-::: {.detail}
-67 patients
-:::
-:::
+<img src="FLAVOUR Table 1.jpeg"/>
 
-::: {.stat-card}
-::: {.label}
-IVUS
-:::
-::: {.value}
-8.5%
-:::
-::: {.detail}
-71 patients
-:::
-:::
+### Table 2
 
-::: {.stat-card}
-::: {.label}
-Absolute difference
+<img src="FLAVOUR Table 2.jpeg"/>
 :::
-::: {.value}
--0.4%p
-:::
-::: {.detail}
-FFR minus IVUS
-:::
-:::
-:::
 
-::: {.margin-scale}
-::: {.marker style="left:47%;"}
-:::
-::: {.label style="left:47%;"}
-97.5% one-sided upper CI 2.2%p
-:::
-::: {.marker .margin style="left:53%;"}
-:::
-::: {.label style="left:53%;"}
-NI margin 2.5%p
-:::
-::: {.tick style="left:30%;"}
-0
-:::
-::: {.tick style="left:47%;"}
-2.2
-:::
-::: {.tick style="left:53%;"}
-2.5
-:::
-:::
+---
 
-::: {.takeaway}
-Upper boundary가 비열등성 마진 2.5%p보다 작아 FFR-guided strategy의 비열등성이 입증되었다. P=0.01 for noninferiority.
-:::
+## Results: Primary Outcome
 
-## Primary Outcome: Figure 1 and Time-to-event 해석
+- **24개월 복합 사건 발생률**
+  - **FFR 가이드 그룹**: **8.1%** (67명 / 838명)
+  - **IVUS 가이드 그룹**: **8.5%** (71명 / 844명)
+- **비열등성 통계 결과**
+  - 절대 위험 차이: **-0.4% 포인트**
+  - 상한 신뢰구간 지표: 97.5% CI 상한선 2.2% 포인트 (마진 2.5% 미만 충족)
+  - **비열등성 검정 통과 ($P = 0.01$)**
 
-::: {.columns}
-::: {.column width="44%"}
-### Cox / PH assumption
+---
 
-- Primary outcome HR: 0.96
-- One-sided 95% CI upper boundary: 1.27
-- One-sided 97.5% CI upper boundary: 1.35
-- Schoenfeld residual global test: P=0.99
-- 24개월 cumulative incidence: FFR 8.1%, IVUS 8.5%
-:::
+## Results: Kaplan-Meier Curve
 
-::: {.column width="56%"}
-::: {.image-frame .compact}
-<img src="FLAVOUR Figure 1.jpeg" class="paper-img"/>
-:::
-:::
-:::
+- **생존 곡선의 흐름**
+  - 24개월 추적 관찰 기간 동안 두 군의 복합 사건 발생 곡선은 격차 없이 거의 일치함
+- **위험비 (Hazard Ratio)**
+  - $\text{HR} = 0.96$ (97.5% 단측 신뢰구간 상한선 1.35)
+- **비례위험 검정**
+  - Schoenfeld 잔차 검정 결과 글로벌 $P = 0.99$로 통계적 타당성 확보
+  
+---
 
-::: {.takeaway}
-두 curve는 추적기간 동안 큰 분리 없이 유사했다. 비열등성은 point estimate뿐 아니라 time-to-event 분석과 PH assumption 확인을 함께 바탕으로 한다.
-:::
+# Results
 
-## Primary and Secondary Outcomes: Table 3
+::: panel-tabset
+### Table 3
 
-::: {.image-frame}
-<img src="FLAVOUR Table 3.jpeg" class="paper-img tall"/>
-:::
+<img src="FLAVOUR Table 3.jpeg"/>
 
-::: {.small-note}
-Primary outcome 및 주요 2차 결과가 함께 제시된 원문 Table 3. 2차 결과의 신뢰구간은 multiplicity 보정이 없으므로 exploratory로 해석한다.
-:::
+### Figure 1
 
-## Secondary Outcomes
-
-| Outcome at 24 months | FFR (N=838) | IVUS (N=844) | Difference |
-|---|---:|---:|---:|
-| All-cause death | 11 (1.3%) | 19 (2.3%) | -0.9%p |
-| Any myocardial infarction | 16 (1.9%) | 14 (1.7%) | 0.2%p |
-| Any revascularization | 47 (5.7%) | 44 (5.3%) | 0.4%p |
-| Ischemia-driven revascularization | 38 (4.6%) | 33 (4.0%) | 0.6%p |
-| Target-vessel revascularization | 27 (3.3%) | 20 (2.4%) | 0.9%p |
-| Stroke | 6 (0.7%) | 10 (1.2%) | -0.5%p |
-
-::: {.small-note}
-2차 결과의 CI는 multiplicity 보정이 없어 결정적 우월성/차이 검정으로 해석하지 않는다.
+<img src="FLAVOUR Figure 1.jpeg"/>
 :::
 
-## Patient-reported Outcomes: SAQ
-
-| SAQ domain | FFR baseline | FFR final | IVUS baseline | IVUS final |
-|---|---:|---:|---:|---:|
-| Physical limitation | 65±15 | 67±14 | 64±16 | 66±14 |
-| Angina stability | 52±21 | 74±18 | 51±22 | 74±18 |
-| Angina frequency | 80±16 | 84±13 | 80±16 | 84±13 |
-| Treatment satisfaction | 73±15 | 72±11 | 73±15 | 73±11 |
-| Quality of life | 58±17 | 66±11 | 57±17 | 66±13 |
-| Total sum | 95±11 | 100±9 | 95±11 | 100±10 |
-
-::: {.takeaway}
-증상과 삶의 질은 두 군 모두에서 유사했다. FFR군에서 PCI를 적게 했지만 환자 보고 협심증 결과가 나빠지지 않았다.
-:::
+---
 
-## Robustness Checks
+## Results: Secondary Clinical Indicators
 
-::: {.decision-grid}
-::: {.decision-card}
-::: {.card-title}
-Per-protocol analysis
-:::
+- **개별 구성 요소 및 2차 사건 분석 (ITT 기준)**
+  - 모든 원인 사망률: FFR 1.3% vs. IVUS 2.3%
+  - 전체 심근경색 발생률: FFR 1.9% vs. IVUS 1.7%
+  - 시술 관련 심근경색: FFR 1.2% vs. IVUS 0.9%
+  - 전체 재혈관화 시술률: FFR 5.7% vs. IVUS 5.3%
+  - 스텐트 혈전증 발생률: FFR 0.1% vs. IVUS 0.1%
 
-- N=1619
-- Primary outcome: FFR 8.2% vs IVUS 8.7%
-- Absolute difference: -0.5%p
-- P=0.02 for noninferiority
-:::
+---
 
-::: {.decision-card}
-::: {.card-title}
-Nicorandil 제외 post-hoc
-:::
+## Results: Stent & Resource Utilization
 
-- Protocol은 adenosine을 지정했으나 288명은 nicorandil로 FFR 시행
-- 이들을 제외해도 primary outcome은 FFR 7.7% vs IVUS 8.7%
-- Absolute difference: -1.0%p
-:::
-:::
+- **PCI 시술 시행 빈도의 차이**
+  - **FFR 가이드 그룹**: **44.4%**
+  - **IVUS 가이드 그룹**: **65.3%**
+  - FFR 사용 시 **시술률 절대 수치 20.9% 포인트 감소**
+- **시술군 내 스텐트 소모량 (환자당 평균)**
+  - 사용된 스텐트 수: FFR 1.4개 vs. IVUS 1.5개
+  - 사용된 스텐트 총 길이: FFR 37.2 mm vs. IVUS 38.6 mm
 
-::: {.takeaway}
-ITT 결과는 protocol 준수자 분석과 hyperemic agent 관련 post-hoc 분석에서도 방향성이 유지되었다.
-:::
+---
 
-## Main Interpretation
+## Results: Per-Vessel Analysis
 
-::: {.section-kicker}
-Clinical meaning
-:::
+- **혈관 단위 데이터**
+  - 대상 혈관수: FFR 군 919개 vs. IVUS 군 901개
+- **대상 혈관 중 실제 PCI 시술 진행률**
+  - **FFR 가이드 그룹**: **33.2%** (305개 / 919개)
+  - **IVUS 가이드 그룹**: **58.4%** (526개 / 901개)
 
-- IVUS는 anatomy와 stent optimization에 강하지만, 이 연구의 low-risk intermediate stenosis 환자군에서는 더 많은 PCI와 stent 사용이 24개월 임상 결과 개선으로 이어지지 않았다.
-- FFR은 physiology 기반으로 PCI를 줄였고, 주요 임상 사건과 환자보고 증상은 IVUS와 유사했다.
-- 따라서 intermediate stenosis에서 "FFR로 PCI를 줄이는 전략"은 적어도 24개월 결과에서는 IVUS-guided strategy에 비해 임상적으로 받아들일 수 있다.
+---
 
-::: {.takeaway}
-핵심 메시지: 더 많이 stent를 넣는 전략이 항상 더 좋은 결과를 만들지는 않았다.
-:::
+## Results: Patient-Reported Outcomes
 
-## Why Did FFR Not Lose Despite Less PCI?
+- **Seattle Angina Questionnaire (SAQ) 설문 지표**
+  - 신체적 한계, 통증 빈도, 치료 만족도 등 5개 도메인 전체에서 두 군간 차이 없음
+- **주요 스펙트럼 (24개월 시점 점수)**
+  - **협심증 빈도 점수**: FFR 84 vs. IVUS 84
+  - **치료 만족도 점수**: FFR 72 vs. IVUS 73
+  - 스텐트 삽입을 적게 한 FFR 군 환자들도 주관적 통증 완화 및 만족도는 동일함
 
-::: {.decision-grid}
-::: {.decision-card}
-::: {.card-title}
-Possible explanation 1
-:::
+---
 
-FFR은 실제 허혈을 유발하는 병변을 선별하므로, 허혈을 만들지 않는 해부학적 협착에 대한 PCI를 줄였을 수 있다.
-:::
+## Results: Subgroup & Sensitivity Robustness
 
-::: {.decision-card}
-::: {.card-title}
-Possible explanation 2
-:::
+- **Per-Protocol (PP) 분석 결과 ($N=1,619$)**
+  - 주요 복합 사건 발생률: FFR 군 8.2% vs. IVUS 군 8.7%
+  - 절대 위험 차이 -0.5% 포인트 $\rightarrow$ **비열등성 $P = 0.02$ 로 결론 지지**
+- **당뇨병 동반 유무 하위 분석**
+  - 당뇨 환자군 ($\text{HR } 1.13$) 및 비당뇨 환자군 ($\text{HR } 0.88$) 결과 일관됨
+  - 환자의 기저 대사 위험도와 상관없이 두 전략의 비열등성 유효함
 
-대상자들이 평균 SYNTAX score <10의 low-risk anatomy였고, guideline-based medical therapy의 영향이 컸을 수 있다.
-:::
-:::
+---
 
-::: {.decision-grid}
-::: {.decision-card}
-::: {.card-title}
-Possible explanation 3
-:::
+## Discussion_1: Interventional Gap
 
-IVUS의 해부학적 기준은 PCI 빈도를 높였지만, 그 추가 PCI가 primary outcome 차이를 만들 만큼의 incremental benefit을 주지 못했을 수 있다.
-:::
+  - 두 군의 기저 병변 차이가 없었음에도 IVUS 군에서 시술을 21% 더 많이 수행함
+  - 그럼에도 예후에 차이가 없었다는 것은 **현재 IVUS의 PCI 시행 기준이 엄격하지 않다**는 점을 시사
+  - 실제 허혈 가능성이 낮은 병변에 스텐트를 설치하는 것은 불필요하거나 오히려 해로울 수 있음
 
-::: {.decision-card}
-::: {.card-title}
-Possible explanation 4
-:::
+---
 
-24개월 추적은 stent optimization의 장기적 차이를 충분히 드러내기에는 짧을 가능성이 있다.
-:::
-:::
 
-## Limitations
+## Discussion_2: Research Meaning
 
-- 대상자는 모두 Asian descent였으므로 다른 인종/의료환경으로 일반화에 제한
-- 평균 SYNTAX score가 10 미만인 low-risk lesion population
-- Open-label trial이라 operator가 배정군을 알고 있었고, 추적 중 revascularization decision에 영향을 줄 가능성
-- FFR과 IVUS는 각각 physiology와 intracoronary imaging의 대표 도구일 뿐이며 OCT, nonhyperemic pressure ratio, angiography-derived FFR 등은 비교하지 않음
-- Trial criteria는 lesion-level hemodynamic significance와 plaque vulnerability를 통합하지 못함
-- 2차 결과는 multiplicity 보정이 없어 exploratory로 해석해야 함
+- **장비 단일화 실태 반영**
+  - 많은 의료 기관이 현실적으로 한 장비만 구입하여 시술의 모든 단계를 가이드함
+- **두 검사법 비교의 필요성**
+  - FFR은 고위험 치료 누락 리스크가 있고, IVUS는 실제 예후와 무관한 협착을 과치료할 리스크가 있음
 
-## Clinical Take-home
 
-::: {.stat-grid}
-::: {.stat-card}
-::: {.label}
-Decision making
-:::
-::: {.value}
-FFR
-:::
-::: {.detail}
-허혈 기반 PCI 여부 판단에 강점
-:::
-:::
+---
 
-::: {.stat-card}
-::: {.label}
-Optimization
-:::
-::: {.value}
-IVUS
-:::
-::: {.detail}
-Stent sizing/landing/expansion 최적화에 강점
-:::
-:::
+## Limitations_1: Risk & Open-Label
 
-::: {.stat-card}
-::: {.label}
-FLAVOUR message
-:::
-::: {.value}
-Noninferior
-:::
-::: {.detail}
-FFR strategy reduced PCI without worse 24-month outcomes
-:::
-:::
-:::
+- **저위험군 환자 중심 편향**
+  - 평균 SYNTAX 점수가 10점 미만인 저위험군 환자만 포함되어 복잡 병변 고위험군에게 확장 적용 불가
+- **Open-Label 설계**
+  - 시술자가 어떤 장비인지 아는 상태에서 시술하여, 추적기 재혈관화 판단에 주관성이 개입될 여지 있음
 
-::: {.takeaway}
-Intermediate stenosis에서 FFR-guided strategy는 IVUS-guided strategy보다 시술을 덜 하면서도 24개월 임상 결과와 환자보고 결과가 유사했다.
-:::
+---
 
-## Conclusion
+## Limitations_2: Race & Extensibility
 
-::: {.section-kicker}
-Authors' conclusion
-:::
+- **인종 및 국가적 제한**
+  - 동아시아인(한국·중국) 코호트로만 구성되어 전 세계 다인종 일반화에는 제약이 있음
+- **프로토콜 성공 목표 달성률**
+  - 사전에 정의한 초엄격 시술 성공 기준 달성률은 전체의 **52.9%**에 불과 (두 군 간 성공률은 50.1% vs 54.8%로 대등)
+  - FFR, IVUS 외에 다른 영상/생리 검사법 및 두 장비를 모두 사용한 군과의 추가 비교 연구 필요
 
-Intermediate coronary stenosis로 PCI 평가를 받는 환자에서, FFR guidance는 IVUS guidance와 비교해 24개월 사망, 심근경색 또는 모든 재혈관화 복합 결과에 대해 비열등했다.
+---
 
-::: {.section-kicker}
-Presentation conclusion
-:::
+## Final Conclusion
 
-- FFR-guided strategy는 PCI 시행률과 stent 사용량을 유의하게 줄였다.
-- 그럼에도 primary outcome, 주요 구성요소, stroke, SAQ 기반 환자보고 결과는 IVUS-guided strategy와 유사했다.
-- 단, 이 결과는 low-risk, 아시아 intermediate stenosis 환자군의 24개월 결과로 해석해야 한다.
-- 실제 임상에서는 FFR과 IVUS를 경쟁 도구가 아니라 physiology와 anatomy를 보완하는 도구로 이해하는 것이 타당하다.
-
-## Suggested Discussion Points
-
-1. Intermediate stenosis에서 FFR과 IVUS 중 하나만 선택해야 한다면 어떤 환자에서 어떤 전략을 우선할 것인가?
-2. IVUS-guided strategy의 더 높은 PCI rate가 장기 추적에서 이득으로 바뀔 가능성이 있는가?
-3. FFR로 PCI를 defer한 병변 중 vulnerable plaque가 있는 경우를 어떻게 관리할 것인가?
-4. 현재 진료에서는 FFR + IVUS 병합 전략이 더 합리적인가, 아니면 비용/시간을 고려해 선택적 사용이 적절한가?
-
-## Image Use and Remaining Needs
-
-| 파일 | 사용 위치 | 역할 |
-|---|---|---|
-| FLAVOUR Background image.png | title, PCI overview | 발표 주제 시각화 |
-| FLAVOUR Study design.png | Study Design: Figure S1 | 연구 흐름 요약 |
-| FLAVOUR Figure S2.png | Enrollment/Figure S2 | CONSORT flow |
-| FLAVOUR Table 1.jpeg | Baseline/Table 1 | 대상자 기저 특성 |
-| FLAVOUR Table 2.jpeg | Procedural/Table 2 | PCI 및 stent 사용 차이 |
-| FLAVOUR Table 3.jpeg | Outcomes/Table 3 | primary/secondary outcome 원문 표 |
-| FLAVOUR Figure 1.jpeg | Primary outcome/Figure 1 | cumulative incidence 시각화 |
-
-::: {.small-note}
-추가로 있으면 좋은 이미지는 coronary anatomy/plaque schematic, 실제 PCI balloon-stent deployment, IVUS 단면, FFR pressure wire schematic이다. 현재 업로드된 논문 이미지는 모두 반영했다.
-:::
+### Take-Home Message
 
-## References
+> **"In patients with intermediate coronary stenosis, FFR guidance is noninferior to IVUS guidance regarding 24-month composite clinical outcomes."**
 
-::: {.reference}
-Koo BK, Hu X, Kang J, et al. Fractional Flow Reserve or Intravascular Ultrasonography to Guide PCI. N Engl J Med. 2022;387:779-789.  
-Supplementary Appendix and Protocol for NEJMoa2201546.
-:::
+- **최종 요약**:
+  1. 24개월 복합 임상 사건(사망+심근경색+재혈관화) 발생률 대등 (**8.1% vs 8.5%**)
+  2. FFR 사용 시 불필요한 스텐트 오남용 및 PCI 시술 빈도를 **절대치 21% 가량 감소**
+  3. 환자가 체감하는 주관적 삶의 질 및 협심증 빈도 만족도는 완전 동일
